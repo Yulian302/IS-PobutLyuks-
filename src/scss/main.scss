@@ -1,19 +1,63 @@
-$font-size:1rem;
-$font-color:#0A0C14;
-$body-color:#5ae81e;
-$header-color:#0a0a0c;
-$footer-color:#1569b3;
-$footer-height:30vh;
-html{
+$font-size: 1rem;
+$font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font-color: white;
+$body-color: #5ae81e;
+$header-color: #0a0a0c;
+$main-color: #7894ad;
+$footer-color: #080a0b;
+$border:1px dashed white;
+$header-height: 15vh;
+$main-height: 100vh;
+$footer-height: 30vh;
+$info-panel-height: 6vh;
+$content-margin: 6vh 3.5vh 2vh 3.5vh;
+$content-width: inherit;
+$content-max-height: inherit;
+
+html {
+    font-family: $font-family;
     font-size: $font-size;
-    color:$font-color;
+    color: $font-color;
     background-color: $body-color;
+    margin: auto;
+    max-width: 1140px;
 }
-header{
-     background-color: $header-color;
+
+article {
+    height: 77%;
 }
-footer{
+
+header,
+footer,
+main,
+#info-panel {
+    border: $border;
+}
+
+header {
+    background-color: $header-color;
+    height: $header-height;
+}
+
+footer {
     background-color: $footer-color;
     height: $footer-height;
-    
+}
+
+main {
+    background-color: $main-color;
+    height: $main-height;
+}
+
+main>#info-panel {
+    height: $info-panel-height;
+    background-color: grey;
+    margin: 3vh 2vh auto 2vh;
+}
+
+main article>#content {
+    margin: $content-margin;
+    background-color: rgb(104, 87, 87);
+    min-height: 100%;
+    width: $content-width;
 }
