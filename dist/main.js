@@ -1,1 +1,0 @@
-(()=>{"use strict";var e;document.body.prepend(("Проєкт зібрано за допомогою Webpack",(e=document.createElement("h1")).textContent="Проєкт зібрано за допомогою Webpack",e))})();

@@ -4,4 +4,4 @@ function component(text) {
     element.textContent = text;
     return element;
 }
-document.body.prepend(component("Проєкт зібрано за допомогою Webpack"));
+// document.body.prepend(component("Проєкт зібрано за допомогою Webpack"));

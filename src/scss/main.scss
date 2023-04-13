@@ -1,8 +1,19 @@
 $font-size:1rem;
 $font-color:#0A0C14;
-$body-color:#ffeef1;
+$body-color:#5ae81e;
+$header-color:#0a0a0c;
+$footer-color:#1569b3;
+$footer-height:30vh;
 html{
     font-size: $font-size;
     color:$font-color;
     background-color: $body-color;
+}
+header{
+     background-color: $header-color;
+}
+footer{
+    background-color: $footer-color;
+    height: $footer-height;
+    
 }
