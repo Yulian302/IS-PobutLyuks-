@@ -1,7 +1,8 @@
 import './scss/main.scss'
-function component(text) {
-    const element = document.createElement("h1");
-    element.textContent = text;
+function get_creator_name(name) {
+    const element = document.createElement('p');
+    let str='This template is created by '+name;
+    element.textContent = str;
     return element;
 }
-// document.body.prepend(component("Проєкт зібрано за допомогою Webpack"));
+document.body.prepend(get_creator_name('Yulian Bohomol'));
