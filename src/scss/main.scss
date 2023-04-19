@@ -1,11 +1,14 @@
 $font-size: 1rem;
-$font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$font-family:"Apercu","Segoe UI","Roboto","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 $font-color: white;
-$body-color: #5ae81e;
-$header-color: #0a0a0c;
-$main-color: #7894ad;
-$footer-color: #080a0b;
-$border:1px dashed white;
+$body-color: #578496;
+$header-color: #15141F;
+$main-color: #141C3A;
+$footer-color: #15141F;
+$info-panel-color:#3f75a1;
+$gold-color:#CFAE0F;
+$product-section-color: #FFFFFF;
+$border:1px solid rgb(255, 255, 255);
 $header-height: 15vh;
 $main-height: 100vh;
 $footer-height: 30vh;
@@ -13,14 +16,13 @@ $info-panel-height: 6vh;
 $content-margin: 6vh 3.5vh 2vh 3.5vh;
 $content-width: inherit;
 $content-max-height: inherit;
-
 html {
     font-family: $font-family;
     font-size: $font-size;
     color: $font-color;
     background-color: $body-color;
     margin: auto;
-    max-width: 1140px;
+    max-width: 80vw;
 }
 
 article {
@@ -51,13 +53,13 @@ main {
 
 main>#info-panel {
     height: $info-panel-height;
-    background-color: grey;
+    background-color:$info-panel-color;
     margin: 3vh 2vh auto 2vh;
 }
 
 main article>#content {
     margin: $content-margin;
-    background-color: rgb(104, 87, 87);
+    background-color: $product-section-color;
     min-height: 100%;
     width: $content-width;
 }

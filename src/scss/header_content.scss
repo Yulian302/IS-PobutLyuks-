@@ -1,0 +1,66 @@
+@import 'main';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.menu {
+    height: $header-height;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.nav-menu {
+    @include flex-center;
+
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.nav-links {
+    list-style: none;
+    @include flex-center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    li {
+        margin: 0 10px;
+        @media screen and (max-width: 768px) {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 52%;
+            padding: 10px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-color: $gold-color;
+                border-radius: 55%;
+                color: black;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 5px;
+            }
+        }
+    }
+}

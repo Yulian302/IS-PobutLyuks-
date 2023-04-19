@@ -1,3 +1,15 @@
 header
-    h1 header
+    .header_content
+        .logo
+            svg(viewBox="0 0 150 150")
+                use(xlink:href="D:\\VSCode Projects\\IS\\src\\resources\\images\\logo.svg")
+        nav.menu
+            ul.nav-links
+                each link in ['Search','Categories','About us','Cart']
+                    li
+                        a(href="#")=link
+
+    
+            
+
         
